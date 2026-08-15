@@ -1,0 +1,6 @@
+{
+  "name": "The Sovereign: Acts of the Apostles",
+  "description": "A cooperative historical board game of apostolic mission, persecution, providential decrees, and church planting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

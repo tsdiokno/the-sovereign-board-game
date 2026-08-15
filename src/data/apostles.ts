@@ -1,0 +1,103 @@
+import { ApostleDefinition, RegionDefinition } from '../types/game';
+
+export const APOSTLES: ApostleDefinition[] = [
+  {
+    name: 'Paul',
+    title: 'The Prisoner',
+    icon: 'Pa',
+    color: '#3b82f6',
+    borderClass: 'border-blue-500',
+    bgClass: 'bg-blue-600',
+    ability: 'Can plant seeds when arrested. Overrides Judaizers & Council.',
+    detailedAbility: 'Paul ignores turn skipping when arrested. He can spend 2 crowns to settle the Council of Jerusalem without penalty, and can write Galatians to neutralize the Judaizers.',
+  },
+  {
+    name: 'Peter',
+    title: 'The Rock',
+    icon: 'Pe',
+    color: '#10b981',
+    borderClass: 'border-emerald-500',
+    bgClass: 'bg-emerald-600',
+    ability: 'Harvests trigger at only 2 seeds where present. Pride causes hypocrisy (turn skip).',
+    detailedAbility: 'Peter presence reduces region harvest threshold to 2. However, rolling Thorns or gaining pride triggers his hypocrisy and requires restoration (skips next turn). Can rebuke Simon the Sorcerer.',
+  },
+  {
+    name: 'Thomas',
+    title: 'The Pragmatist',
+    icon: 'Th',
+    color: '#eab308',
+    borderClass: 'border-amber-500',
+    bgClass: 'bg-amber-600',
+    ability: 'Ignores "Apollos Waters" corporate distribution to plant locally. Immune to shipwrecks.',
+    detailedAbility: 'When rolling Apollos Waters, Thomas plants in his own region rather than the lowest. Immune to the Euroclydon shipwreck relocation.',
+  },
+  {
+    name: 'James',
+    title: 'The First Martyr',
+    icon: 'Ja',
+    color: '#ef4444',
+    borderClass: 'border-rose-500',
+    bgClass: 'bg-rose-600',
+    ability: 'Starts with 5 Heat. Generates double Heat. Can absorb Nero\'s wrath.',
+    detailedAbility: 'James is targeted quickly (starts with 5 Heat and generates +2 on Judas rolls). In events like Nero\'s Blame, James can sacrifice himself to take +4 Heat and spare all brothers.',
+  },
+  {
+    name: 'John',
+    title: 'The Exile',
+    icon: 'Jo',
+    color: '#8b5cf6',
+    borderClass: 'border-purple-500',
+    bgClass: 'bg-purple-600',
+    ability: 'Immune to Martyrdom. Can absorb the Ephesian Riot.',
+    detailedAbility: 'John cannot be martyred even if his Heat exceeds the Global Track. During the Ephesian Riot, he can absorb the mob (+4 Heat) to protect Asia Minor seeds.',
+  },
+  {
+    name: 'Andrew',
+    title: 'The Bringer',
+    icon: 'An',
+    color: '#f97316',
+    borderClass: 'border-orange-500',
+    bgClass: 'bg-orange-600',
+    ability: 'Places TWO seeds on Apollos Waters. Bears a brother\'s pride burden.',
+    detailedAbility: 'Andrew adds +2 Seeds (instead of 1) to the weakest region on Apollos Waters. During Care of the Churches, Andrew can bear the pride burden of an overworking brother.',
+  },
+];
+
+export const REGIONS: RegionDefinition[] = [
+  {
+    id: 'jerusalem',
+    name: 'Jerusalem',
+    desc: 'The center of origin. Arrests here generate +1 extra Heat.',
+    threshold: 3,
+  },
+  {
+    id: 'antioch',
+    name: 'Antioch',
+    desc: 'The missionary hub. Immune to Pride gain when rolling "Thorns".',
+    threshold: 3,
+  },
+  {
+    id: 'asia_minor',
+    name: 'Asia Minor',
+    desc: 'Fertile heartland. Harvests naturally trigger at only 2 Seeds.',
+    threshold: 2,
+  },
+  {
+    id: 'greece',
+    name: 'Greece',
+    desc: 'Intellectual center. Gain +1 Pride if you roll "Stony Ground".',
+    threshold: 3,
+  },
+  {
+    id: 'rome',
+    name: 'Rome',
+    desc: 'Imperial capital. Yields Double Crowns on Harvest. Arrests generate +1 Heat.',
+    threshold: 3,
+  },
+  {
+    id: 'ends_earth',
+    name: 'Ends of the Earth',
+    desc: 'Uncharted frontier. Requires 4 Seeds to trigger a Harvest.',
+    threshold: 4,
+  },
+];
