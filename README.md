@@ -25,6 +25,8 @@ The project is built on the **Data-Driven Package Paradigm** (where the engine r
 ├── LICENSE.md                 # 🛡️ Code: GNU AGPLv3 + Commons Clause
 ├── LICENSE-ASSETS.txt         # 🎨 Art: Proprietary Copyright (Non-commercial play only)
 ├── MODDING-POLICY.md          # 🤝 Community: Modding EULA
+├── MODDING-WIKI.md            # 📚 Modding Wiki & Package Developer Guide
+├── AI-TRANSPARENCY.md         # 🤖 Generative AI Authorship & Provenance Disclaimer
 ├── src/
 │   ├── config/
 │   │   └── gameConfig.ts      # Central source of truth: Branding (™), epigraph, theme tokens
@@ -72,9 +74,16 @@ The project implements four layers:
 | Layer | License | Implementation & Legal Effect |
 | :--- | :--- | :--- |
 | **1. Code** | **AGPLv3 + Commons Clause** | Open copyleft engine for transparency and study, with a complete legal ban on commercial resale, paid rehosting, or publishing on Steam/app stores without permission. ([LICENSE.md](./LICENSE.md)) |
-| **2. Art & Lore** | **Proprietary Copyright** | Official portraits, card art, 3D assets, and narrative text are all rights reserved for non-commercial game play only. ([LICENSE-ASSETS.txt](./LICENSE-ASSETS.txt)) |
+| **2. Art & Lore** | **Proprietary Copyright** | Official portraits, card art, 3D assets, and narrative text are all rights reserved for non-commercial game play only. ([LICENSE-ASSETS.txt](./assets/LICENSE-ASSETS.txt)) |
 | **3. Brand** | **Common Law Trademark (™)** | **The Sovereign: Acts of the Apostles™** establishes immediate trademark notice against commercial clones or deceptive spin-offs. |
 | **4. Community** | **Modding EULA** | Modders own their original scenarios; mods cannot be locked behind paywalls; public mods can be featured upstream. ([MODDING-POLICY.md](./MODDING-POLICY.md)) |
+
+---
+
+## 📚 Community Resources & Transparency
+
+- **[Modding Wiki & Guide](./MODDING-WIKI.md)**: Developer documentation, `SovereignModPackage` JSON schema, and step-by-step tutorial for building custom content packages.
+- **[AI Authorship & Provenance Disclaimer](./AI-TRANSPARENCY.md)**: Clear delineation matrix distinguishing human creative direction (theology, game balance, narrative design) from AI-assisted code scaffolding tools.
 
 ---
 
@@ -82,14 +91,14 @@ The project implements four layers:
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Start development server (port 3000)
-npm run dev
+pnpm run dev
 
 # Lint codebase & type-check
-npm run lint
+pnpm run lint
 
 # Build production bundle
-npm run build
+pnpm run build
 ```
